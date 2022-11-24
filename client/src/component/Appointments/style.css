@@ -1,0 +1,27 @@
+.header {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 25px;
+}
+.entete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.appointmentTitle {
+    font-size: larger;
+    font-weight: 500;
+    color: #c06174;
+}
+.searchDiv {
+    width: 200px;
+    padding: 5px 10px 5px 10px;
+    border: 0;
+    border-radius: 7px;
+    background-color: white;
+}
+.dataRender{
+    width: 90%;
+    margin: auto;
+}

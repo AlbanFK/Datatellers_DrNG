@@ -1,0 +1,1 @@
+export const ALL_APPOINTMENTS = "ALL_APPOINTMENTS"

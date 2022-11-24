@@ -1,0 +1,27 @@
+.missed {
+    height: 100px;
+    background-color: rgb(238, 206, 207);
+    color: rgb(207, 50, 42);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 10px;
+    padding-left: 20px;
+}
+.passed {
+    height: 100px;
+    background-color: rgb(207, 214, 207);
+    color: rgb(71, 130, 98);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 10px;
+    padding-left: 20px;
+}
+.recheduled {
+    height: 100px;
+    background-color: rgb(238, 218, 193);
+    color: rgb(217, 144, 28);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 10px;
+    padding-left: 20px;
+}

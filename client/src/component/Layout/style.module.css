@@ -1,0 +1,30 @@
+.layout{
+    background-color: #eeeae7;
+}
+
+.bar {
+    width: calc(100% - 20px);
+    height: 50px;
+    background-color: #423a38;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    position: fixed;
+    z-index: 2;
+}
+.title {
+    height: 100%;
+    width: 30%;
+    margin: 0;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #5e92a7;
+    color: white;
+    font-weight: 700;
+    font-size: larger;
+    border-radius: 0% 100% 14% 86% / 100% 0% 100% 0% ;
+}
+.outletBody {
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    padding-top: 90px;
+}
