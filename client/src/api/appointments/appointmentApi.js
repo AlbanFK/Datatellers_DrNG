@@ -28,19 +28,7 @@ export const getOneAppointment =  async (code) => {
     console.log(data);
     return data
 }
-// export const updateAppointment =  async (code) => {
-//     const response = await  fetch(`${baseURL}/update/${code}`)
-    
-//     if (!response.ok) {
-//         const message = `An error occurred: ${response.statusText}`;
-//         console.log(message);
-//         return;
-//     }
 
-//     const data = await response.json();
-//     console.log(data);
-//     return data
-// }
 
 export const newAppointment = async (formData) => {
   let isOK;

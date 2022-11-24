@@ -20,11 +20,11 @@ function Appointments() {
     const fetchingStatus = useSelector(state => state.appointment.status)
     const data = useSelector(state => state.appointment.data)
     const recapData = useSelector(state => state.appointment.recap)
-    console.log(recapData);
+    // console.log(recapData);
     const dispatch = useDispatch()
 
     useEffect(() => {
-        // console.log('location',location.change);
+        
         
         if ((data.length === 0) || location.state) {
             dispatch(allAppointments())
@@ -34,7 +34,7 @@ function Appointments() {
 
     useEffect(() => {
        dispatch(recap())
-       console.log(data);
+    //    console.log(data);
     }, [dispatch, data])
     
 
@@ -58,9 +58,9 @@ function Appointments() {
                         <div style={{width: "50%", height: "2px", backgroundColor: "#c06174" }}></div>
                     </div>
                 </p>
-                <div className='searchDiv'>
+                {/* <div className='searchDiv'>
                     <Input  placeholder="search" bordered={false}  suffix={suffix} />
-                </div>
+                </div> */}
             </div>
 
             {(fetchingStatus === 'idle') &&

@@ -40,13 +40,13 @@ function AppmentForm() {
         const yy = d.getFullYear() - 2000
         const mm = d.getMonth() + 1
         const dd = d.getDate()
-        console.log(d, dd, allData.length, "A" + sn + dd + mm + yy);
+        // console.log(d, dd, allData.length, "A" + sn + dd + mm + yy);
         values.unique_code = "A" + sn + dd + mm + yy
-        console.log('Received values from form: ', values);
+        // console.log('Received values from form: ', values);
 
         dispatch(createAppointment(values))
         // const resp = useSelector(state => state.newAppointment.data)
-        console.log('new',newData);
+        // console.log('new',newData);
        
         navigate('/',{state: {change: true }})
             
@@ -71,7 +71,7 @@ function AppmentForm() {
         fetchingOne()
           // console.log('find', newData);
       }
-      console.log('find', newData);
+      // console.log('find', newData);
      
   }, [])
   

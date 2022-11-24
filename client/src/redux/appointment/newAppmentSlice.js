@@ -7,10 +7,10 @@ dayjs().format()
 export const createAppointment = createAsyncThunk(
     'appointment/newAppointment',
     async (data) => {
-      console.log('dataCreated',data);
+      // console.log('dataCreated',data);
       const response = await newAppointment(data);
       // The value we return becomes the `fulfilled` action payload
-      console.log('response',response);
+      // console.log('response',response);
       if (response.status === 200) {
         return {status: 200};
       }
@@ -20,10 +20,10 @@ export const createAppointment = createAsyncThunk(
 export const updateOne = createAsyncThunk(
     'appointment/updateOne',
     async (item) => {
-      console.log('dataupload', item.values, item.code);
+      // console.log('dataupload', item.values, item.code);
       const response = await updateAppointment(item.code, item.values);
       // The value we return becomes the `fulfilled` action payload
-      console.log('response',response);
+      // console.log('response',response);
       if (response.status === 200) {
         return {status: 200};
       }

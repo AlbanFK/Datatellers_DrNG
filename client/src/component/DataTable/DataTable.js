@@ -257,71 +257,7 @@ function DataTable({data}) {
         },
         
       ];
-      // const data = [
-      //   {
-      //     key: '1',
-      //     name: 'John Brown',
-      //     code: 'A00181122',
-      //     age: 32,
-      //     address: 'New York No. 1 Lake Park',
-      //     phone: "655711689",
-      //     sex: 'male',
-      //     request_date: '2022-11-16',
-      //     appointment_date: '2022-11-17',
-      //     status: 'Passed',
-      //   },
-      //   {
-      //     key: '2',
-      //     name: 'Carla Green',
-      //     code: 'A00181122',
-      //     age: 42,
-      //     address: 'missed No. 1 Lake Park',
-      //     phone: "655711689",
-      //     sex: 'female',
-      //     request_date: '2022-11-17',
-      //     appointment_date: '2022-11-18',
-      //     status: 'missed',
-          
-      //   },
-      //   {
-      //     key: '3',
-      //     name: 'Joe Black',
-      //     code: 'A00181122',
-      //     age: 32,
-      //     address: 'Sidney No. 1 Lake Park',
-      //     phone: "655711689",
-      //     sex: 'male',
-      //     request_date: '2022-11-11',
-      //     appointment_date: '2022-11-18',
-      //     status: 'pending',
-      //   },
-      //   {
-      //     key: '4',
-      //     name: 'Alban cristal',
-      //     code: 'A00181122',
-      //     age: 32,
-      //     address: 'Sidney No. 1 Lake Park',
-      //     phone: "655711689",
-      //     sex: 'male',
-      //     request_date: '2022-11-13',
-      //     appointment_date: '2022-11-18',
-      //     status: 'recheduled',
-      //   },
-      //   {
-      //     key: '5',
-      //     name: 'Christina Evans',
-      //     code: 'A00181122',
-      //     age: 42,
-      //     address: 'missed No. 1 Lake Park',
-      //     phone: "655711689",
-      //     sex: 'female',
-      //     request_date: '2022-11-17',
-      //     appointment_date: '2022-11-18',
-      //     status: 'Passed',
-          
-      //   },
-
-      // ];
+      
       const onChange = (pagination, filters, sorter, extra) => {
         console.log('params', pagination, filters, sorter, extra);
       };
