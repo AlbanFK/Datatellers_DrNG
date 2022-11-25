@@ -22,15 +22,18 @@ function Appointments() {
     const recapData = useSelector(state => state.appointment.recap)
     // console.log(recapData);
     const dispatch = useDispatch()
+    const fetchingAllAppointments = () => {
+        dispatch(allAppointments())
+    }
 
     useEffect(() => {
         
         
         if ((data.length === 0) || location.state) {
-            dispatch(allAppointments())
+            fetchingAllAppointments();
         }
        
-    }, [dispatch])
+    }, [])
 
     useEffect(() => {
        dispatch(recap())
