@@ -5,11 +5,15 @@ import Highlighter from 'react-highlight-words';
 import { SearchOutlined } from '@ant-design/icons';
 import { Button, Input, Space, Table, Tag } from 'antd';
 
+import { useSelector } from 'react-redux'
+
+
 import dayjs from 'dayjs'
 
-function DataTable({data}) {
+function DataTable() {
   dayjs().format()
   const navigate = useNavigate()
+  const data = useSelector(state => state.appointment.data)
     const ageRange = [
       {
         text: '1',

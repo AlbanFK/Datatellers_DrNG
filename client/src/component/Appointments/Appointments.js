@@ -78,7 +78,7 @@ function Appointments() {
         </div>
         <div className='dataRender'>
             {(fetchingStatus === 'idle') ? 
-                <DataTable data={data}/>   
+                <DataTable/>   
             :
                 <div style={{width: '100%', display: 'flex', justifyContent: 'center', marginTop: '20vh' }}>
                     <Spin tip="Loading..." size="large"></Spin>
