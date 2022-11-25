@@ -1,5 +1,6 @@
 
-const baseURL = 'http://localhost:5000/api'
+// const baseURL = 'http://localhost:5000/api'
+const baseURL = 'https://hidden-mountain-20244.herokuapp.com/api'
 
 export const getAllAppointments =  async () => {
     const response = await  fetch(`${baseURL}/appointment/`)
