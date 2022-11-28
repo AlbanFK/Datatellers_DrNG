@@ -7,7 +7,7 @@ import Card from '../StatusCard/Card';
 import DataTable from '../DataTable/DataTable';
 
 import { useSelector, useDispatch } from 'react-redux'
-import { allAppointments,recap } from '../../redux/appointment/appointmentrSlice'
+import { allAppointments,recap, clear } from '../../redux/appointment/appointmentrSlice'
 
 
 
@@ -23,6 +23,7 @@ function Appointments() {
     // console.log(recapData);
     const dispatch = useDispatch()
     const fetchingAllAppointments = () => {
+        dispatch(clear())
         dispatch(allAppointments())
     }
 

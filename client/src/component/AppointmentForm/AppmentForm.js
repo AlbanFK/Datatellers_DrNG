@@ -31,7 +31,7 @@ function AppmentForm() {
       if (code) {
         console.log('Received values from form: ', values);
         dispatch(updateOne({code, values}))
-        dispatch(clear())
+        // dispatch(clear())
         navigate('/',{state: {change: true }})
       } else {
         // console.log('Received values from form: ', values.appointment_date);
