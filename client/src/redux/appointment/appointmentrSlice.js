@@ -93,6 +93,9 @@ export const appointmentSlice = createSlice({
           },
         ]
       },
+      clear: state => {
+        state.data = []
+      },
     },
     extraReducers: (builder) => {
       builder
@@ -106,6 +109,6 @@ export const appointmentSlice = createSlice({
     },
   })
 
-  export const { recap } = appointmentSlice.actions
+  export const { recap, clear } = appointmentSlice.actions
 
   export default appointmentSlice.reducer

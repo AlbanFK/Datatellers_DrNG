@@ -6,7 +6,7 @@ import { ArrowLeftOutlined } from '@ant-design/icons';
 
 import { useSelector, useDispatch } from 'react-redux'
 import { createAppointment,findOne, updateOne } from '../../redux/appointment/newAppmentSlice'
-import { allAppointments } from '../../redux/appointment/appointmentrSlice'
+import { allAppointments, clear } from '../../redux/appointment/appointmentrSlice'
 
 
 import dayjs from 'dayjs'
@@ -31,6 +31,7 @@ function AppmentForm() {
       if (code) {
         console.log('Received values from form: ', values);
         dispatch(updateOne({code, values}))
+        dispatch(clear())
         navigate('/',{state: {change: true }})
       } else {
         // console.log('Received values from form: ', values.appointment_date);
