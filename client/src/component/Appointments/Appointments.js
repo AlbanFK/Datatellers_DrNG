@@ -29,9 +29,9 @@ function Appointments() {
     useEffect(() => {
         
         
-        if ((data.length === 0) || location.state) {
+        // if ((data.length === 0) || location.state) {
             fetchingAllAppointments();
-        }
+        // }
        
     }, [])
 
